@@ -4,8 +4,8 @@ title: MP-MAD
 tagline: Mobile Software Engineer
 description: >-
   Software engineer focused on modern mobile app development.
-url: https://michalAngelo.github.io
-baseurl: /personalwebsite
+url: https://michalangelo.github.io
+baseurl: ""
 lang: en
 markdown: kramdown
 highlighter: rouge
