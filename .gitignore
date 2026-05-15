@@ -1,0 +1,6 @@
+construction/_site/
+construction/.jekyll-cache/
+_site/
+AGENTS.md
+.vscode/
+.DS_Store

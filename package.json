@@ -1,0 +1,10 @@
+{
+  "name": "personalwebsite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Jekyll-powered Android / Kotlin Multiplatform portfolio",
+  "scripts": {
+    "start": "bundle exec jekyll serve --source construction --config construction/_config.yml,construction/_config.local.yml --livereload",
+    "build": "bundle exec jekyll build --source construction --destination construction/_site"
+  }
+}

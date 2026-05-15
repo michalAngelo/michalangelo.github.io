@@ -1,0 +1,26 @@
+meta:
+  title: Mobile Software Engineering Portfolio
+  description: Portfolio of a software engineer focused on modern mobile app development.
+nav:
+  about: About
+  switch_label: PL
+accessibility:
+  skip_to_content: Skip to content
+hero:
+  subtitle: Modern app development driven by a passion for new technologies
+  about_title: A few words about me
+  about_paragraphs:
+    - I specialize in Android development, and with Kotlin Multiplatform I also build shared modules for other platforms. I move comfortably between mobile, web, and electronics - creating small web apps and prototyping software for Arduino, ESP boards, and similar hardware. I enjoy building, soldering, and quickly validating ideas in the real world.
+    - I enjoy new challenges, use AI where it adds value, and can work just as comfortably in a more traditional engineering style. I write tests, help shape specifications, improve existing solutions, and support products scaling to 200M+ users.
+    - Depending on the need, I build standalone apps or connect multiple environments together. I keep learning, share knowledge through discussions and code reviews, and bring proven patterns while staying open to conversation and existing ways of working.
+  skills_title: Core areas of my experience and interests
+  skills_more: and more
+metrics:
+  years_experience: Years of commercial experience
+  shipped_projects: Supported projects / shipped apps
+footer:
+  availability: Engineering support
+  availability_copy: Need support with mobile app development? Get in touch.
+  community: Community
+social:
+  email: Email

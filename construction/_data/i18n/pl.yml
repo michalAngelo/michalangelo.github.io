@@ -1,0 +1,26 @@
+meta:
+  title: Portfolio Software Engineering dla aplikacji mobilnych
+  description: Portfolio inżyniera oprogramowania koncentrującego się na nowoczesnym tworzeniu aplikacji mobilnych.
+nav:
+  about: O mnie
+  switch_label: EN
+accessibility:
+  skip_to_content: Przejdź do treści
+hero:
+  subtitle: Nowoczesne tworzenie aplikacji napędzane pasją do nowych technologii
+  about_title: Kilka słów o mnie
+  about_paragraphs:
+    - Specjalizuję się w Androidzie, ale dzięki Kotlin Multiplatform tworzę też moduły na inne platformy i swobodnie łączę projekty od webu po elektronikę. Tworzę drobne aplikacje webowe, prototypowe programy na Arduino/ESP i inne płytki - lubię coś skręcić, polutować i szybko sprawdzić pomysł w realnym świecie.
+    - Uwielbiam nowe wyzwania, korzystam z AI tam, gdzie to dozwolone, ale potrafię pisać w klasycznym stylu. Piszę testy, współtworzę specyfikacje, poprawiam istniejące rozwiązania i wspieram produkty skalujące się do 200+ mln użytkowników.
+    - W zależności od potrzeb buduję pojedyncze aplikacje lub łączę środowiska, stale się uczę i dzielę wiedzą w dyskusjach i przeglądach kodu - mam sprawdzone schematy, ale zawsze jestem otwarty na rozmowę i dopasowanie się do istniejącego modelu działania.
+  skills_title: Główne obszary mojego doświadczenia i zainteresowań
+  skills_more: i więcej
+metrics:
+  years_experience: Lata komercyjnego doświadczenia
+  shipped_projects: Wspierane projekty / wydane aplikacje
+footer:
+  availability: Współpraca
+  availability_copy: Potrzebujesz wsparcia w rozwoju aplikacji mobilnej? Napisz.
+  community: Społeczność
+social:
+  email: Email

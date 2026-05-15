@@ -1,0 +1,21 @@
+# Basic site details
+name: MP-MAD
+title: MP-MAD
+tagline: Mobile Software Engineer
+description: >-
+  Software engineer focused on modern mobile app development.
+url: https://michalAngelo.github.io
+baseurl: /personalwebsite
+lang: en
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+collections: []
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+plugins: []
+include: ["assets"]
+exclude: ["node_modules", "_site"]

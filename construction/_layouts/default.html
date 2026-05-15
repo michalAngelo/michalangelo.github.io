@@ -1,0 +1,66 @@
+{% assign lang = page.lang | default: site.lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign page_title = page.title | default: t.meta.title | default: site.title %}
+{% assign page_description = page.description | default: t.meta.description | default: site.description %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+	<meta charset="utf-8">
+	<title>{{ page_title }} | {{ site.title }}</title>
+	<meta name="description" content="{{ page_description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+	<link rel="alternate" hreflang="pl" href="{{ '/pl/' | absolute_url }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">{{ t.accessibility.skip_to_content }}</a>
+	<header class="site-header">
+		<div class="container header-grid">
+			<div class="brand-lockup">
+				<p class="brand-sigil">michalAngelo</p>
+				<h1 class="logo">{{ site.name }}</h1>
+			</div>
+			<nav class="primary-nav">
+				<ul>
+					<li><a href="#about">{{ t.nav.about }}</a></li>
+					<li class="lang-switcher">
+						{% if lang == 'pl' %}
+						<strong>PL</strong>
+						<span>/</span>
+						<a href="{{ '/' | relative_url }}">{{ t.nav.switch_label }}</a>
+						{% else %}
+						<strong>EN</strong>
+						<span>/</span>
+						<a href="{{ '/pl/' | relative_url }}">{{ t.nav.switch_label }}</a>
+						{% endif %}
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main id="main-content">
+		{{ content }}
+	</main>
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div>
+				<p class="eyebrow">{{ t.footer.availability }}</p>
+				<p class="footer-copy">{{ t.footer.availability_copy }}</p>
+			</div>
+			<div>
+				<p class="eyebrow">{{ t.footer.community }}</p>
+				<ul class="social-list">
+					{% for item in site.data.social %}
+					<li><a href="{{ item.url }}"{% unless item.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{% if item.label_key %}{{ t.social[item.label_key] }}{% else %}{{ item.label }}{% endif %}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<section class="hero" id="about">
+	<div class="container hero-grid">
+		<div class="hero-body">
+			<p class="eyebrow reveal reveal-delay-0">Android · Kotlin Multiplatform · AI</p>
+			<h2 class="reveal reveal-delay-1">Modern Mobile App Development</h2>
+			<p class="hero-subtitle reveal reveal-delay-2">{{ include.t.hero.subtitle }}</p>
+			<h3 class="tag-list-title reveal reveal-delay-3">{{ include.t.hero.about_title }}</h3>
+			<div class="lede">
+				{% for paragraph in include.t.hero.about_paragraphs %}
+				<p class="reveal reveal-group-about">{{ paragraph }}</p>
+				{% endfor %}
+			</div>
+			<h3 class="tag-list-title reveal reveal-delay-4">{{ include.t.hero.skills_title }}</h3>
+			<ul class="tag-list">
+				{% for skill in site.data.skills %}
+				<li class="reveal reveal-chip reveal-group-skills">{{ skill }}</li>
+				{% endfor %}
+				<li class="tag-list-more reveal reveal-chip reveal-group-skills">{{ include.t.hero.skills_more }}</li>
+			</ul>
+			<div class="metrics">
+				{% for metric in site.data.metrics %}
+				<div class="metric-card reveal reveal-group-metrics">
+					<p class="metric-value">{{ metric.value }}</p>
+					<p class="metric-label">{{ include.t.metrics[metric.key] }}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
