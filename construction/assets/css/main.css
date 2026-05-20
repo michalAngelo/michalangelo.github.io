@@ -190,7 +190,7 @@ ul {
 }
 
 .hero {
-	background: linear-gradient(90deg, rgba(8, 8, 8, 0.78) 0%, rgba(8, 8, 8, 0.4) 38%, rgba(8, 8, 8, 0.72) 100%), url('../images/angel_of_tech_bg_main.png') center center / cover no-repeat;
+	background: linear-gradient(90deg, rgba(8, 8, 8, 0.78) 0%, rgba(8, 8, 8, 0.4) 38%, rgba(8, 8, 8, 0.72) 100%), url('../images/angel_of_tech_bg_main.webp') center center / cover no-repeat;
 	padding: 1rem 0 1.5rem;
 }
 
