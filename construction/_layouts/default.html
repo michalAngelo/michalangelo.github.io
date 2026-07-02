@@ -14,15 +14,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 	<a class="skip-link" href="#main-content">{{ t.accessibility.skip_to_content }}</a>
 	<header class="site-header">
 		<div class="container header-grid">
 			<div class="brand-lockup">
-				<p class="brand-sigil">michalAngelo</p>
-				<h1 class="logo">{{ site.name }}</h1>
+				<h1 class="brand-sigil">michalAngelo</h1>
 			</div>
 			<nav class="primary-nav">
 				<ul>

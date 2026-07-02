@@ -124,16 +124,6 @@ ul {
 }
 
 .brand-lockup {
-	display: flex;
-	flex-direction: column;
-	gap: 0;
-	line-height: 1;
-}
-
-.logo {
-	font-family: var(--font-display);
-	font-size: 1.6rem;
-	margin: 0.4rem 0 0;
 	line-height: 1;
 }
 
@@ -145,9 +135,12 @@ ul {
 	margin: 0 0 0.5rem;
 }
 
-.brand-sigil {
-	font-size: 0.75rem;
-	letter-spacing: 0.12em;
+.site-header .brand-sigil {
+	display: block;
+	font-family: var(--font-display);
+	font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+	font-weight: 700;
+	letter-spacing: 0.03em;
 	text-transform: none;
 	color: var(--accent-secondary) !important;
 	margin: 0;
