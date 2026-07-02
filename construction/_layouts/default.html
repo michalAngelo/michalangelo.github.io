@@ -2,11 +2,16 @@
 {% assign t = site.data.i18n[lang] %}
 {% assign page_title = page.title | default: t.meta.title | default: site.title %}
 {% assign page_description = page.description | default: t.meta.description | default: site.description %}
+{% assign site_title = site.title | default: site.name %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
 	<meta charset="utf-8">
-	<title>{{ page_title }} | {{ site.title }}</title>
+	{% if page_title contains site_title %}
+	<title>{{ page_title }}</title>
+	{% else %}
+	<title>{{ page_title }} | {{ site_title }}</title>
+	{% endif %}
 	<meta name="description" content="{{ page_description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
@@ -46,9 +51,12 @@
 	</main>
 	<footer class="site-footer">
 		<div class="container footer-grid">
-			<div>
-				<p class="eyebrow">{{ t.footer.availability }}</p>
-				<p class="footer-copy">{{ t.footer.availability_copy }}</p>
+			<div class="quote-box" data-quotes-url="{{ '/assets/quotes.json' | relative_url }}" data-quotes-lang="{{ lang }}" hidden>
+				<p class="eyebrow">{{ t.footer.quote_heading }}</p>
+				<blockquote>
+					<p class="quote-text"></p>
+					<cite class="quote-author"></cite>
+				</blockquote>
 			</div>
 			<div>
 				<p class="eyebrow">{{ t.footer.community }}</p>
@@ -60,6 +68,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+	<script src="{{ '/assets/js/app.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>

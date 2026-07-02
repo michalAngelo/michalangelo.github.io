@@ -1,6 +1,6 @@
 meta:
-  title: Portfolio Software Engineering dla aplikacji mobilnych
-  description: Portfolio inżyniera oprogramowania koncentrującego się na nowoczesnym tworzeniu aplikacji mobilnych.
+  title: michalAngelo - Mobile & Software Engineering
+  description: Inżynier oprogramowania skupiony na nowoczesnym rozwoju aplikacji mobilnych, Androidzie i Kotlin Multiplatform.
 nav:
   about: O mnie
   switch_label: EN
@@ -21,6 +21,7 @@ metrics:
 footer:
   availability: Współpraca
   availability_copy: Potrzebujesz wsparcia w rozwoju aplikacji mobilnej? Napisz.
+  quote_heading: Myśl przewodnia
   community: Społeczność
 social:
   email: Email

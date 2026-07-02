@@ -1,6 +1,6 @@
 meta:
-  title: Mobile Software Engineering Portfolio
-  description: Portfolio of a software engineer focused on modern mobile app development.
+  title: michalAngelo - Mobile & Software Engineering
+  description: Software engineer focused on modern mobile app development, Android and Kotlin Multiplatform.
 nav:
   about: About
   switch_label: PL
@@ -21,6 +21,7 @@ metrics:
 footer:
   availability: Engineering support
   availability_copy: Need support with mobile app development? Get in touch.
+  quote_heading: Guiding Thought
   community: Community
 social:
   email: Email

@@ -11,6 +11,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	applyStagger('.reveal-group-skills', 620, 38);
 	applyStagger('.reveal-group-metrics', 980, 110);
 
+	const quoteBox = document.querySelector('.quote-box');
+
+	if (quoteBox) {
+		const quoteText = quoteBox.querySelector('.quote-text');
+		const quoteAuthor = quoteBox.querySelector('.quote-author');
+		const quotesUrl = quoteBox.dataset.quotesUrl;
+		const quotesLang = quoteBox.dataset.quotesLang || 'en';
+
+		fetch(quotesUrl)
+			.then(response => response.ok ? response.json() : Promise.reject(response))
+			.then(quotes => {
+				const localizedQuotes = quotes[quotesLang] || quotes.en || [];
+
+				if (!localizedQuotes.length) {
+					return;
+				}
+
+				const randomQuote = localizedQuotes[Math.floor(Math.random() * localizedQuotes.length)];
+				quoteText.textContent = randomQuote.quote;
+				quoteAuthor.textContent = randomQuote.author;
+				quoteBox.hidden = false;
+			})
+			.catch(() => {
+				quoteBox.hidden = true;
+			});
+	}
+
 	window.requestAnimationFrame(() => {
 		window.requestAnimationFrame(() => {
 			document.body.classList.add('is-ready');
