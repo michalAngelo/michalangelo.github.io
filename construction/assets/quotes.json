@@ -23,6 +23,10 @@
     {
       "quote": "Każdy wie, że debugowanie jest dwa razy trudniejsze niż napisanie programu za pierwszym razem.",
       "author": "Brian Kernighan"
+    },
+    {
+      "quote": "Jasność jest formą życzliwości. Niejasność - formą nieżyczliwości.",
+      "author": "Brené Brown"
     }
   ],
   "en": [
@@ -49,6 +53,10 @@
     {
       "quote": "Everyone knows that debugging is twice as hard as writing a program in the first place.",
       "author": "Brian Kernighan"
+    },
+    {
+      "quote": "Clear is kind. Unclear is unkind.",
+      "author": "Brené Brown"
     }
   ]
 }
